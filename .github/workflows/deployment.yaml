@@ -1,5 +1,4 @@
 name: CI/CD for React App
-
 on:
   push:
     branches: [main]
@@ -26,9 +25,7 @@ jobs:
 
       - name: Build Project
         run: npm run build
-        # env:
-        #   REACT_APP_WELCOME_TEXT: ${{ vars.REACT_APP_WELCOME_TEXT }}
-
+        
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
