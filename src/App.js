@@ -15,7 +15,8 @@ const App = () => {
   }
   return (
     <div style={cssStyle}>
-    
+     <h1>{process.env.REACT_APP_WELCOME_TEXT}</h1>
+
      <input type='number'
      value={count}
      onChange={(e)=>setCount(e.target.valueAsNumber)}
